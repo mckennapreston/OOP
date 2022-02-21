@@ -1,23 +1,21 @@
 class CellPhone:
-    def __init__(self, manu):
-        self.__manufact = manu
 
-    def __init__(self, mod):
-        self.__model = mod
-
-    def __init__(self, rprice):
-        self.__retail_price = rprice
+    ## only way to create instance is init method
+    def __init__(self, manufacta, modelb, pricec):
+        self.__manufact = manufacta
+        self.__model = modelb
+        self.__retail_price = pricec
 
     ###############################################
+    ## the set manufact method aqccepts an argument for the phone's manufacturet
+    def set_manufact(self, man):
+        self.__manufact = man
 
-    def set_manufact(self, str):
-        return self.__manufact
+    def set_model(self, mod):
+        self.__model = mod
 
-    def set_model(self, str):
-        return self.__model
-
-    def set_retail_price(self, amount):
-        return self.__retail_price
+    def set_retail_price(self, price):
+        self.__price
 
     ###############################################
 
